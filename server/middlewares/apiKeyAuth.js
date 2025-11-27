@@ -1,26 +1,19 @@
 const apiKeyAuth = (req, res, next) => {
   // Rutas públicas que no requieren API key
-  const publicPaths = [
+  const publicGetPaths = [
+    '/api/docs',          // Documentación
     '/api/events',        // GET eventos es público
-    '/api/discord-user',  // Consultar usuarios Discord
-    '/api/auth/login',    // Login
-    '/api/auth/request-staff', // Solicitar staff
-    '/api/auth/check-admin'    // Verificar admin
+    '/api/ping'           // Health check
   ];
 
-  // Permitir GET a eventos sin API key (lectura pública)
-  if (req.method === 'GET' && req.path === '/api/events') {
-    return next();
+  // Permitir GET a rutas públicas sin API key
+  if (req.method === 'GET') {
+    const isPublicGet = publicGetPaths.some(p => req.path.startsWith(p));
+    if (isPublicGet) return next();
   }
 
-  // Permitir rutas públicas
-  const isPublic = publicPaths.some(p => req.path.startsWith(p) && 
-    (req.method === 'GET' || req.method === 'POST' && (p.includes('login') || p.includes('request-staff'))));
-
-  if (isPublic && req.method === 'GET') {
-    return next();
-  }
-  if (req.path === '/api/auth/login' || req.path === '/api/auth/request-staff') {
+  // Permitir root
+  if (req.path === '/' || req.path === '') {
     return next();
   }
 
