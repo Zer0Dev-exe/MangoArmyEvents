@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "server.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "server.js"
+    }
+  ],
+  "env": {
+    "MONGODB_URI": "@mongodb_uri",
+    "DISCORD_BOT_TOKEN": "@discord_bot_token",
+    "API_KEY": "@api_key",
+    "ADMIN_IDS": "@admin_ids"
+  }
+}
