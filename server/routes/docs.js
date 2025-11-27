@@ -147,7 +147,7 @@ const generateHtml = (routes) => {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mango Army API - Documentación</title>
-  <link rel="icon" href="https://cdn.discordapp.com/icons/814300956998672404/a_fd59844582abe58fe13440528bf0955e.gif" type="image/gif">
+  <link rel="icon" href="https://cdn.discordapp.com/icons/617702007188488205/a_dbd5a6f43cc5a2deaff32fa14ebbde0e.gif?size=128" type="image/gif">
   <style>
     :root {
       --bg: #0d1117;
@@ -506,21 +506,11 @@ const generateHtml = (routes) => {
       <div class="sidebar-header">
         <div class="logo-container">
           <img 
-            src="https://cdn.discordapp.com/icons/814300956998672404/a_fd59844582abe58fe13440528bf0955e.gif" 
+            src="https://cdn.discordapp.com/icons/617702007188488205/a_dbd5a6f43cc5a2deaff32fa14ebbde0e.gif?size=128" 
             alt="" 
             class="logo-img"
-            onerror="this.style.display='none'; document.getElementById('logo-fallback').style.display='block';"
+            onerror="this.src='https://cdn.discordapp.com/icons/814300956998672404/a_fd59844582abe58fe13440528bf0955e.gif'"
           >
-          <svg id="logo-fallback" viewBox="0 0 100 100" width="64" height="64" style="display: none;">
-            <defs>
-              <linearGradient id="mangoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" style="stop-color:#ff6b35"/>
-                <stop offset="100%" style="stop-color:#f7c531"/>
-              </linearGradient>
-            </defs>
-            <circle cx="50" cy="50" r="45" fill="url(#mangoGrad)"/>
-            <text x="50" y="62" text-anchor="middle" font-size="40" font-weight="bold" fill="#000">MA</text>
-          </svg>
         </div>
         <div class="sidebar-title">Mango Army API</div>
         <div class="sidebar-subtitle">Documentación v1.0</div>
