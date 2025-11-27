@@ -193,7 +193,7 @@ const apiKeyAuth = (req, res, next) => {
       <h3>📋 ¿Qué es esta API?</h3>
       <p>
         La API de Mango Army Eventos permite gestionar los eventos del servidor de Discord. 
-        Maneja podcasts, eventos de Minecraft, reuniones del staff y más.
+        Maneja podcasts, eventos de Minecraft y más.
       </p>
     </div>
 
