@@ -32,6 +32,21 @@ app.get('/', (req, res) => {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mango Army API</title>
+  
+  <!-- Open Graph / Discord Embed -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="🥭 Mango Army API">
+  <meta property="og:description" content="Sistema de gestión de eventos para el servidor de Discord. Podcasts, Minecraft, eventos y más.">
+  <meta property="og:image" content="https://cdn.discordapp.com/icons/617702007188488205/a_dbd5a6f43cc5a2deaff32fa14ebbde0e.gif?size=512">
+  <meta property="og:site_name" content="Mango Army">
+  <meta name="theme-color" content="#ff6b35">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="🥭 Mango Army API">
+  <meta name="twitter:description" content="Sistema de gestión de eventos para Discord">
+  <meta name="twitter:image" content="https://cdn.discordapp.com/icons/617702007188488205/a_dbd5a6f43cc5a2deaff32fa14ebbde0e.gif?size=512">
+  
   <link rel="icon" href="https://cdn.discordapp.com/icons/617702007188488205/a_dbd5a6f43cc5a2deaff32fa14ebbde0e.gif?size=128" type="image/gif">
   <style>
     :root {

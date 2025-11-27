@@ -37,6 +37,15 @@ const apiKeyAuth = (req, res, next) => {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mango Army API</title>
+  
+  <!-- Open Graph / Discord Embed -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="🔐 Mango Army API - Acceso Restringido">
+  <meta property="og:description" content="Esta ruta requiere autenticación. Visita la documentación para más información.">
+  <meta property="og:image" content="https://cdn.discordapp.com/icons/617702007188488205/a_dbd5a6f43cc5a2deaff32fa14ebbde0e.gif?size=512">
+  <meta property="og:site_name" content="Mango Army">
+  <meta name="theme-color" content="#f85149">
+  
   <link rel="icon" href="https://cdn.discordapp.com/icons/617702007188488205/a_dbd5a6f43cc5a2deaff32fa14ebbde0e.gif?size=128" type="image/gif">
   <style>
     :root {
